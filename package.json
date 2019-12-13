@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-react": "^7.17.0",
+    "prettier": "^1.19.1",
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-rscss": "^0.4.0"
+  },
+  "scripts": {
+    "lint": "eslint 'lib/**/*.{js,jsx}'",
+    "stylelint": "stylelint 'apps/css/**/*.scss'",
+    "prettier:check": "prettier --list-different 'styles/**/*.scss' 'scripts/**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write 'styles/**/*.scss' 'scripts/**/*.{js,jsx,ts,tsx}'"
+  }
+}
