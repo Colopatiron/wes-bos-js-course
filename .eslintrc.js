@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:prettier/recommended',
     'eslint-config-prettier'
   ],
   settings: {
@@ -19,10 +20,11 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  plugins: ['react'],
+  plugins: ['react', 'prettier'],
   parser: 'babel-eslint',
   rules: {
     // Add any additional rules here
-    'react/prop-types': 0
+    'react/prop-types': 0,
+    'prettier/prettier': 'error'
   }
 }
